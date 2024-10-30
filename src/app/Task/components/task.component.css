@@ -1,0 +1,65 @@
+/* Basic button styles */
+.delete-button {
+    background-color: #dc3545; /* Red color for delete */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding for button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.delete-button:hover {
+    background-color: #c82333; /* Darker red color on hover */
+}
+/* Basic button styles */
+.update-button {
+    background-color: #007bff; /* Blue color for update */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding for button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.update-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+/* Basic button styles */
+.add-button {
+    background-color: #28a745; /* Green color for add */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding for button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.add-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+}
+.task-button {
+    background-color: #47b2e4; /* Pastel blue color */
+    color: #212529; /* Dark text color */
+    border: 1px solid #47b2e4; /* Border color */
+    padding: 8px 16px; /* Padding for button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.task-button:hover {
+    background-color: #87ceeb; /* Lighter blue color on hover */
+    border-color: #87ceeb; /* Lighter border color on hover */
+}
+

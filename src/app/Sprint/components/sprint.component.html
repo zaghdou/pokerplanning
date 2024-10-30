@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<main>
+    <section class="about">
+        <div class="container">
+            <!-- Link to the page /board -->
+            <a href="./board" class="board-link-button">Importer des Tasks</a>
+            <br><br>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sprint ID</th>
+                    <th>Sprint Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let sprint of sprints" (click)="onRowClicked(sprint)">
+                    <td>{{ sprint.sprintId }}</td>
+                    <td>{{ sprint.sprintName }}</td>
+                    <td>{{ sprint.startDate | date:'yyyy-MM-dd' }}</td>
+                    <td>{{ sprint.endDate | date:'yyyy-MM-dd' }}</td>
+                    <td>
+                        <button class="add-button" (click)="addSprint(sprint.sprintId)">Add</button>
+                        <button class="update-button" (click)="updateSprint(sprint.sprintId)">Update</button>
+                        <button class="delete-button" (click)="deleteSprint(sprint.sprintId)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<app-footer></app-footer>

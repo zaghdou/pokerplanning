@@ -1,0 +1,40 @@
+<!-- task.component.html -->
+<app-header></app-header>
+<main>
+    <section class="about">
+        <div class="container">
+            <button class="task-button"> Task</button>
+            <br><br>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Task Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Complexity</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks">
+                    <td>{{ task.taskId }}</td>
+                    <td>{{ task.taskName }}</td>
+                    <td>{{ task.startDate }}</td>
+                    <td>{{ task.endDate }}</td>
+                    <td>{{ task.Complexity }}</td>
+                    <td>{{ task.description }}</td>
+                    <td>{{ task.status }}</td>
+                    <td>
+                        <button class="update-button" (click)="updateTask(task.taskId)">Update</button>
+                        <button class="delete-button" (click)="deleteTask(task.taskId)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<app-footer></app-footer>

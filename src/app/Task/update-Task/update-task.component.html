@@ -1,0 +1,57 @@
+<app-header></app-header>
+<main>
+    <section class="about">
+        <div class="col-md-6 offset-md-3">
+            <h1>Update Task</h1>
+            <form (ngSubmit)="onSubmit()">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="taskName">Task Name</label>
+                                <input type="text" class="form-control" id="taskName"
+                                    [(ngModel)]="task.taskName" name="taskName">
+                            </div>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <input type="text" class="form-control" id="taskDescription"
+                                    [(ngModel)]="task.description" name="taskDescription">
+                            </div>
+                        </td>
+                    
+                        <td>
+                            <div class="form-group">
+                                <label for="startDate">Start Date</label>
+                                <input type="datetime-local" class="form-control" id="startDate"
+                                    [(ngModel)]="task.startDate" name="startDate">
+                            </div>
+                       
+                        </td>
+
+                        <td>
+                
+                            <div class="form-group">
+                                <label for="endDate">End Date</label>
+                                <input type="datetime-local" class="form-control" id="endDate"
+                                    [(ngModel)]="task.endDate" name="endDate">
+                            </div>
+                        </td>   
+                        </tr>
+                    </table> 
+                
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <input type="text" class="form-control" id="status"
+                        [(ngModel)]="task.status" name="status">
+                </div>
+           
+       
+                <br>
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>

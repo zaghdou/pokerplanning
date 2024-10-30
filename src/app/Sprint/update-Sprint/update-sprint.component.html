@@ -1,0 +1,45 @@
+<app-header></app-header>
+<main>
+    <section class="about">
+        <div class="col-md-6 offset-md-3">
+            <h1>Update Sprint</h1>
+            <form (ngSubmit)="onSubmit()">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="sprintName">Sprint Name</label>
+                                <input type="text" class="form-control" id="sprintName"
+                                    [(ngModel)]="sprint.sprintName" name="sprintName">
+                            </div>
+
+                    
+                        <td>
+                            <div class="form-group">
+                                <label for="startDate">Start Date</label>
+                                <input type="datetime-local" class="form-control" id="startDate"
+                                    [(ngModel)]="sprint.startDate" name="startDate">
+                            </div>
+                       
+                       
+                    </td>   
+                </tr>
+            </table> 
+                      
+                
+                            <div class="form-group">
+                                <label for="endDate">End Date</label>
+                                <input type="datetime-local" class="form-control" id="endDate"
+                                    [(ngModel)]="sprint.endDate" name="endDate">
+                            </div>
+                       
+                
+             
+       
+                <br>
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>
